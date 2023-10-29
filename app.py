@@ -13,12 +13,11 @@ def main():
     st.title('*Sentiment Analysis System*')
     st.markdown("-------------------")
     st.markdown('Check the sentiment of your text. ')
-    st.markdown('**Note**: Project is in initial stage. So there are high chances you may encounter some error!')
+    st.markdown('**Note**: This project is in initial stage. So there are high chances you may encounter some error!')
     st.markdown("-------------------")
 
     st.markdown(" ")
     user_input = st.text_input('Enter your comment')
-
 
     if st.button("Predict"):
 

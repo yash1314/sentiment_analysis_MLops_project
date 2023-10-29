@@ -17,9 +17,9 @@ from src.exception import CustomException
 from src.logger import logging
 from sklearn.metrics import precision_score
 
-
 nltk.download('punkt')
 nltk.download('stopwords')
+nltk.download('wordnet')
 
 ps = PorterStemmer() 
 lemma = WordNetLemmatizer()
