@@ -19,6 +19,7 @@ from sklearn.metrics import precision_score
 
 
 nltk.download('punkt')
+nltk.download('punkt')
 ps = PorterStemmer() 
 lemma = WordNetLemmatizer()
 
