@@ -18,7 +18,8 @@ from src.logger import logging
 from sklearn.metrics import precision_score
 
 
-nltk.download()
+nltk.download('punkt')
+nltk.download('stopwords')
 
 ps = PorterStemmer() 
 lemma = WordNetLemmatizer()
