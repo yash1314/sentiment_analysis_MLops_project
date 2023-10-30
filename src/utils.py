@@ -1,8 +1,6 @@
 import os
 import sys
 import joblib
-import pandas as pd
-import numpy as np
 
 from nltk.stem import WordNetLemmatizer
 import nltk
@@ -46,23 +44,19 @@ def evaluate_model(X_train, y_train, X_test, y_test, models):
     X_test = tfidf_vectorizer.transform(X_test).toarray()
 
     try:
-        report = {}
-        for i in range(len(models)):
 
-            model = list(models.values())[i]
+        model = models
 
-            # Train model
-            model.fit(X_train,y_train)
+        # Train model
+        model.fit(X_train,y_train)
 
-            # Predict Testing data
-            y_test_pred = model.predict(X_test)
+        # Predict Testing data
+        y_test_pred = model.predict(X_test)
 
-            # Get R2 scores for train and test data
-            test_model_score = precision_score(y_test,y_test_pred)
+        # Get R2 scores for train and test data
+        test_model_score = precision_score(y_test,y_test_pred)
 
-            report[list(models.keys())[i]] =  test_model_score
-
-        return report, tfidf_vectorizer
+        return model, test_model_score, tfidf_vectorizer
 
     except Exception as e:
         logging.info('Exception occured during model training')
