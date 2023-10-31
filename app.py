@@ -5,9 +5,6 @@ import time
 
 predict = PredictPipeline()
 
-def clear_text():
-    st.session_state["text"] = ""
-
 def main():
 
     st.title('*Sentiment Analysis System*')
@@ -17,7 +14,8 @@ def main():
     st.markdown("-------------------")
 
     st.markdown(" ")
-    user_input = st.text_input('Enter your comment')
+
+    user_input = st.text_input(label = 'Enter you text.', label_visibility='collapsed')
 
     if st.button("Predict"):
 
@@ -28,15 +26,16 @@ def main():
             # Preprocess user input
             result = predict.predict(features=user_input)
 
-            with st.spinner('Processing!'):
-                time.sleep(0.5)
 
-                # Display prediction
-                if result == 1:
-                    st.success("Positive_sentiment")
-                else:
-                    st.error("Negative_sentiment")
-                
+        with st.spinner('Processing!'):
+            time.sleep(1)
+
+            # Display prediction
+            if result == 1:
+                st.success("Positive_sentiment")
+            else:
+                st.error("Negative_sentiment")
+                    
 
                 
                 
