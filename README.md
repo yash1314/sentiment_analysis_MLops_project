@@ -5,7 +5,7 @@ This project aims to classify comments into Positive, negative sentiment. For th
 
 ## Folder Structure:
 Here's an overview of the project's folder structure:
-
+```
 Sentiment-Analysis-Project/
 ├── artifacts/
 │ (Include trained models or other important artifacts)
@@ -37,7 +37,7 @@ Sentiment-Analysis-Project/
 ├── setup.py (Setup script for the project)
 ├── app.py (Main application script)
 ├── .gitignore (Specify files to ignore in version control)
-
+```
 
 ## Project Workflow:
 1. Data Ingestion and Preprocessing:
