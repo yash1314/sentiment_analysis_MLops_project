@@ -8,35 +8,36 @@ Here's an overview of the project's folder structure:
 
 Sentiment-Analysis-Project/
 ├── artifacts/
-│   (Include trained models or other important artifacts)
+│ (Include trained models or other important artifacts)
 │
 ├── notebooks/
-│   ├── notebook.ipynb (Jupyter Notebook for the project)
-│   ├── data (Data files or datasets)
+│ ├── notebook.ipynb (Jupyter Notebook for the project)
+│ ├── data/ (Data files or datasets)
 │
 ├── logs/ (Log files or logs directory)
 │
 ├── src/
-│   ├── logger.py (Logging utilities)
-│   ├── exception.py (Custom exception handling)
-│   ├── utils.py (Utility functions)
-│   ├── __init__.py
+│ ├── logger.py (Logging utilities)
+│ ├── exception.py (Custom exception handling)
+│ ├── utils.py (Utility functions)
+│ ├── init.py
 │
-│   ├── components/
-│   │   ├── __init__.py
-│   │   ├── data_ingestion.py (Data loading functions)
-│   │   ├── data_transformation.py (Data preprocessing and feature engineering)
-│   │   ├── model_training.py (Machine learning model training)
+│ ├── components/
+│ │ ├── init.py
+│ │ ├── data_ingestion.py (Data loading functions)
+│ │ ├── data_transformation.py (Data preprocessing and feature engineering)
+│ │ ├── model_training.py (Machine learning model training)
 │
-│   ├── pipelines/
-│   │   ├── __init__.py
-│   │   ├── prediction_pipeline.py (prediction pipeline)
-│   │   ├── training_pipeline.py (Model training pipeline)
+│ ├── pipelines/
+│ │ ├── init.py
+│ │ ├── prediction_pipeline.py (Prediction pipeline)
+│ │ ├── training_pipeline.py (Model training pipeline)
 │
 ├── requirements.txt (List of project dependencies)
 ├── setup.py (Setup script for the project)
 ├── app.py (Main application script)
 ├── .gitignore (Specify files to ignore in version control)
+
 
 ## Project Workflow:
 1. Data Ingestion and Preprocessing:
