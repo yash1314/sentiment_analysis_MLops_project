@@ -1,7 +1,7 @@
 # sentiment_analysis_MLops_project 
 
 ## Overview:
-This project aims to classify comments into Positive, negative sentiment. For this purpose this project uses sentiment analysis and its related technologies. This project uses multinominal naive bayes algorithm.
+This project aims to classify comments into Positive, negative sentiment. For this purpose this project uses sentiment analysis and its related technologies. This project uses multinominal naive bayes algorithm for classification prediction.
 
 ## Folder Structure:
 Here's an overview of the project's folder structure:
@@ -40,15 +40,15 @@ Sentiment-Analysis-Project/
 ```
 
 ## Project Workflow:
-1. Data Ingestion and Preprocessing:
+1. **Data Ingestion and Preprocessing**:
 - Data is ingested using functions in data_ingestion.py.
 - Data preprocessing and feature engineering are performed in data_transformation.py.
-2. Model Training:
+2. **Model Training**:
 - Machine learning models are trained using the data in model_training.py.
 - You can customize the models and hyperparameters as needed.
-3. Prediction Pipeline:
+3. **Prediction Pipeline**:
 - The prediction_pipeline.py script handles sentiment classification based on user input.
-4. Notebook:
+4. **Notebook**:
 - The notebook.ipynb contains an interactive Jupyter Notebook that provides insights into the project.
 
 ## Technologies used:
