@@ -5,6 +5,7 @@ This project aims to classify comments into Positive, negative sentiment. For th
 
 ## Folder Structure:
 Here's an overview of the project's folder structure:
+
 Sentiment-Analysis-Project/
 ├── artifacts/
 │   (Include trained models or other important artifacts)
