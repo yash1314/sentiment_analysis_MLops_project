@@ -14,10 +14,9 @@ def main():
     st.markdown("-------------------")
 
     st.markdown(" ")
+    user_input = st.text_input(label = 'Enter you text.', placeholder='Text')
 
     if st.button("Predict"):
-
-        user_input = st.text_input(label = 'Enter you text.', placeholder='Text')
 
         if user_input[:] == "":
             st.warning("Please enter a message.")
@@ -39,7 +38,5 @@ def main():
                     
 
                 
-                
-
 if __name__ == "__main__":
     main()
