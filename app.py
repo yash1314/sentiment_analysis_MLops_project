@@ -15,9 +15,9 @@ def main():
 
     st.markdown(" ")
 
-    user_input = st.text_input(label = 'Enter you text.', label_visibility='collapsed')
-
     if st.button("Predict"):
+
+        user_input = st.text_input(label = 'Enter you text.', placeholder='Text')
 
         if user_input[:] == "":
             st.warning("Please enter a message.")
@@ -27,14 +27,15 @@ def main():
             result = predict.predict(features=user_input)
 
 
-        with st.spinner('Processing!'):
-            time.sleep(1)
+            with st.spinner('Processing!'):
+                time.sleep(1)
 
-            # Display prediction
-            if result == 1:
-                st.success("Positive_sentiment")
-            else:
-                st.error("Negative_sentiment")
+                # Display prediction
+                if result == 1:
+                    st.success("Positive_sentiment")
+                    
+                else:
+                    st.error("Negative_sentiment")
                     
 
                 
