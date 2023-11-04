@@ -8,13 +8,11 @@ predict = PredictPipeline()
 def main():
 
     st.title('*Sentiment Analysis System*')
-    st.markdown("-------------------")
     st.markdown('Check the sentiment of your text. ')
     st.markdown('**Note**: This project is in initial stage. So there are high chances you may encounter some error!')
-    st.markdown("-------------------")
 
     st.markdown(" ")
-    user_input = st.text_input(label = 'Enter you text.', placeholder='Text')
+    user_input = st.text_area(label = 'Enter you text.', placeholder='Text')
 
     if st.button("Predict"):
 
