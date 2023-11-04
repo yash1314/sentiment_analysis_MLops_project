@@ -34,6 +34,7 @@ Sentiment-Analysis-Project/
 │ │ ├── training_pipeline.py (Model training pipeline)
 │
 ├── requirements.txt (List of project dependencies)
+├── nltk.txt
 ├── setup.py (Setup script for the project)
 ├── app.py (Main application script)
 ├── .gitignore (Specify files to ignore in version control)
